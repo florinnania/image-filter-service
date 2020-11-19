@@ -1,0 +1,78 @@
+{
+	"info": {
+		"_postman_id": "b15937dd-f479-43e1-bef0-ab2dcc8196e8",
+		"name": "udagram-image-filter-service-dev",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://udagram-image-filter-service-dev.us-east-2.elasticbeanstalk.com/filteredimage?image_url=https://upload.wikimedia.org/wikipedia/commons/b/bd/Golden_tabby_and_white_kitten_n01.jpg",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://{{HOST}}/filteredimage?image_url=https://upload.wikimedia.org/wikipedia/commons/b/bd/Golden_tabby_and_white_kitten_n01.jpg",
+					"protocol": "http",
+					"host": [
+						"{{HOST}}"
+					],
+					"path": [
+						"filteredimage"
+					],
+					"query": [
+						{
+							"key": "image_url",
+							"value": "https://upload.wikimedia.org/wikipedia/commons/b/bd/Golden_tabby_and_white_kitten_n01.jpg"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"auth": {
+		"type": "bearer",
+		"bearer": [
+			{
+				"key": "token",
+				"value": "{{token}}",
+				"type": "string"
+			}
+		]
+	},
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"id": "a3fe2405-fe88-442b-93c9-9a424d6bd3f9",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"id": "ee4ee30e-792e-4968-a8d5-341c9e4a89b3",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"id": "0fb68e6b-b611-40dc-9951-b95fecb7c79a",
+			"key": "HOST",
+			"value": "udagram-image-filter-service-dev.us-east-2.elasticbeanstalk.com"
+		},
+		{
+			"id": "a664977d-299f-4310-b324-3d679a98400e",
+			"key": "token",
+			"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJjaWQiOiJiYWNrZW5kIiwiaWF0IjoxNjA1ODE4MjQ4LCJqdGkiOiI4MDIwNTdmZjliNWI0ZWI3ZmJiODg1NmI2ZWIyY2M1YiJ9.IaMbO0I2N55r2WWqg5UV4-ds4XGUttHMQJy_Ku7-070"
+		}
+	],
+	"protocolProfileBehavior": {}
+}
